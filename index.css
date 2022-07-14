@@ -1,0 +1,11 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+/*criei essas 2 classes pro Vue poder escolher dinamicamente*/
+.ocupado {
+    background-color: palevioletred;
+}
+.livre {
+    background-color: darkseagreen;
+}

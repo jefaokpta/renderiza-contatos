@@ -34,12 +34,16 @@ const listContactsApp = new Vue({
     data: {
         classLivre: 'livre',
         classOcupado: 'ocupado',
-        contacts: [],
+        contacts: [{name: 'teste', whatsapp: 123123, imgUrl: '...', busy: false}],
     },
     methods: {
         handleImgError(event) {
             event.target.src = 'assets/imgs/user.png'
             event.onerror = null // previne o erro de loop infinito
+        },
+        select(event, index){
+            console.log(event.target.checked)
+            console.log(index)
         }
     }
 })
